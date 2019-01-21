@@ -8,6 +8,22 @@
  * 		   @richardshepherd   
  */
 
+ @font-face {
+    font-family: hpfont;
+    src: url('../fonts/HARRYP__.TTF');
+ }
+
+ .hp-font {
+     font-family: hpfont;
+ }
+
+ .white-font {
+     color: #ffffff;
+ }
+
+ h1 {
+     font-size: 10em;
+ }
 
 article h2 {
     font-family: 'Lobster Two';
@@ -30,11 +46,24 @@ article h2 {
 }
 
 #first {
-    background: url(../images/puckered.png) 50% 0 no-repeat fixed;
+    background: #000000;
+}
+
+#first video {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
 }
 
 #second {
-    background: url(../images/slide2.jpg) 50% 0 no-repeat fixed;
+    background-image: url(../images/letters-room.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #fourth {
@@ -51,7 +80,6 @@ article h2 {
 
 /* Introduction */
 #first .smashinglogo {
-    background: url(../images/smashing-logo.png) 50% 100px no-repeat fixed;
     min-height: 1000px;
     padding: 0;
     margin: 0;
@@ -121,7 +149,7 @@ article h2 {
     border: 1px solid rgba(150, 150, 150, 0.1);
 }
 
-#third .photograph {
+.photograph {
     background: url(../images/photo.png) transparent 40% 100px no-repeat fixed;
     min-height: 1000px;
     padding: 0;
