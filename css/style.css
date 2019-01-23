@@ -13,8 +13,24 @@
     src: url('../fonts/HARRYP__.TTF');
  }
 
+ @font-face {
+     font-family: amatic;
+     src: url('../fonts/AmaticSC-Regular.ttf');
+ }
+
+ @font-face {
+     font-family: amatic-bold;
+     src: url('../fonts/Amatic-Bold.ttf');
+ }
+
  .hp-font {
      font-family: hpfont;
+ }
+ .a-font {
+     font-family: amatic;
+ }
+ .ab-font {
+     font-family: amatic-bold;
  }
 
  .white-font {
@@ -33,7 +49,7 @@ article h2 {
 }
 
 .story {
-    height: 1000px;
+    height: 100vh;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -43,12 +59,12 @@ article h2 {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
 }
 
 #first {
     background: #000000;
 }
-
 #first video {
     position: fixed;
     right: 0; 
@@ -58,12 +74,33 @@ article h2 {
     width: auto; 
     height: auto;
 }
+#first article {
+    width: 100%;
+    top: 150px;
+    position: absolute;
+    text-align: center;
+}
+#first .sprite {
+        background-image: url(../images/letter.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: center; 
+        background-size: 400px;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 1920px;
+        position: absolute;
+        margin: 0 auto;
+}
 
 #second {
     background-image: url(../images/letters-room.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
 }
 
 #fourth {
@@ -79,35 +116,6 @@ article h2 {
 }
 
 /* Introduction */
-#first .smashinglogo {
-    min-height: 1000px;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
-    margin: 0 auto;
-}
-
-#first article {
-    width: 100%;
-    top: 300px;
-    position: absolute;
-    text-align: center;
-}
-
-#first article p,
-#first article a {
-    color: #ccc;
-}
-
-#first article a {
-    text-decoration: underline;
-}
-
-#first article a:hover {
-    color: #fff;
-}
 
 /* Background Only */
 #second {
@@ -147,17 +155,6 @@ article h2 {
     top: 0;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(150, 150, 150, 0.1);
-}
-
-.photograph {
-    background: url(../images/photo.png) transparent 40% 100px no-repeat fixed;
-    min-height: 1000px;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: absolute;
-    margin: 0 auto;
 }
 
 #third article p {

@@ -19,24 +19,24 @@
   <div id="main" role="main">
 
 	<!-- Section #1 / Intro -->
-	<section id="first" class="story" data-speed="8" data-type="background">
+	<section id="first" class="story parallax-bg" data-direction="up">
 		<video autoplay loop id="video-background" muted plays-inline>
 			<source src="images/white-smoke.mp4" type="video/mp4">
 		</video>
-		<div class="photograph" data-type="sprite" data-offsety="500" data-xposition="50%" data-speed="2" style="background-position: 50% 500px;"></div>
-		<div class="photograph" data-type="sprite" data-offsety="450" data-xposition="50%" data-speed="1" style="background-position: 50% 450px;"></div>
-		<article>
-			<h1 class="hp-font white-font">
+		<article class="white-font">
+			<h1 class="hp-font">
 				Happy Birthday
 			</h1>
 			<p>Wait, what’s this letter? It looks like… could it be…?</p>
 	    </article>
+		<div id="sparkle" class="sprite" data-offsety="430" data-xposition="50%" data-speed="2" data-direction="up"></div>
+		<div id="letter" class="sprite" data-offsety="430" data-xposition="50%" data-speed="3" data-direction="down"></div>
 	</section>
 
 	<!-- Section #2 / Background Only -->
-	<section id="second" class="story">
+	<section id="second" class="story parallax-bg" data-direction="down">
 		<article>
-			<h2>Background Only</h2>
+			<h2 class="a-font">It's your Hogwarts letter!</h2>
 			<p>In this section we are sliding the background at a different speed to the rest of the page.</p>
 			<p>As this text box is scrolling at the same speed as the page, and faster than the background, it creates this lovely parallax effect.</p>
 			<p>You can find all the HTML, CSS and the all important JavaScript files over at <a href="https://github.com/richardshepherd/Parallax-Scrolling">GitHub</a> - so why don't you drop by for some hardcore forking action?</p>
@@ -46,7 +46,7 @@
 	</section>
 	
 	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+	<section id="third" class="story parallax-bg1" data-direction="up">    	
 		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
 		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="29%" data-speed="3"></div>
     	<article>
@@ -61,7 +61,7 @@
 	
 
 	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+	<section id="fourth" class="story parallax-bg" data-direction="down">
     	<article>
     		<h2>HTML5 Video</h2>
 	    	<div class="textbox">    	
@@ -78,7 +78,7 @@
 	</section>	
 
 	<!-- Section #5 / The End-->
-	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
+	<section id="theend" class="story parallax-bg" data-speed="8" data-offsetY="250">    	
 		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
 	</section>
 	
@@ -89,6 +89,9 @@
   <!-- Our Javascript, starting with jQuery -->
   <script src='js/libs/jquery-1.6.1.min.js'></script>
   <script src="js/script.js"></script>
+  <script>
+	  go()
+  </script>
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg");
