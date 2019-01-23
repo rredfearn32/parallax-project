@@ -18,34 +18,20 @@
      src: url('../fonts/AmaticSC-Regular.ttf');
  }
 
- @font-face {
-     font-family: amatic-bold;
-     src: url('../fonts/Amatic-Bold.ttf');
- }
-
- .hp-font {
-     font-family: hpfont;
- }
- .a-font {
-     font-family: amatic;
- }
- .ab-font {
-     font-family: amatic-bold;
- }
-
- .white-font {
-     color: #ffffff;
- }
- .yellow-shadow-font {
-    text-shadow: 1px 4px 0px #daa019;
+ .bold {
+     font-weight: bold;
  }
 
  h1 {
      font-size: 10em;
  }
 
+ * {
+     color: #ffffff;
+ }
+
 article h2 {
-    font-family: 'Lobster Two';
+    font-family: amatic;
     font-size: 60px;
     margin: 25px 0;
     line-height: 1em;
@@ -80,6 +66,7 @@ article h2 {
     margin: 0 auto;
 }
 
+/* First section styles */
 #first {
     background: #000000;
 }
@@ -98,7 +85,6 @@ article h2 {
     position: absolute;
     text-align: center;
 }
-
 #first .sprite#letter {
     background-image: url(../images/letter.png);
 }
@@ -109,6 +95,7 @@ article h2 {
     background-image: url(../images/sparkle-overlay.png);
 }
 
+/* Second section styles */
 #second {
     background-image: url(../images/letters-room.jpg);
     background-size: cover;
@@ -119,13 +106,21 @@ article h2 {
     background-image: url('../images/owl.png');
 }
 
-#fourth {
-    background: url(../images/slide3.jpg) 50% 0 no-repeat fixed;
+/* Third section styles */
+#third {
+    background-image: url(../images/camden.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#third {
-    background: url(../images/slide4.jpg) 50% 0 no-repeat fixed;
+#fourth {
+    background: url(../images/magic-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 #theend {
     background: url(../images/puckered.png) 50% bottom no-repeat fixed;
