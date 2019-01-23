@@ -36,6 +36,9 @@
  .white-font {
      color: #ffffff;
  }
+ .yellow-shadow-font {
+    text-shadow: 1px 4px 0px #daa019;
+ }
 
  h1 {
      font-size: 10em;
@@ -53,13 +56,28 @@ article h2 {
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 1920px;
     position: relative;
     margin: 0 auto;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     overflow: hidden;
+}
+
+.sprite {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center; 
+    background-size: 400px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0 auto;
 }
 
 #first {
@@ -80,20 +98,15 @@ article h2 {
     position: absolute;
     text-align: center;
 }
-#first .sprite {
-        background-image: url(../images/letter.png);
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-x: center; 
-        background-size: 400px;
-        min-height: 100vh;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-width: 1920px;
-        position: absolute;
-        margin: 0 auto;
+
+#first .sprite#letter {
+    background-image: url(../images/letter.png);
+}
+#first .sprite#sparkle {
+    background-image: url(../images/sparkle-overlay.png);
+}
+#first .sprite#sparkle-2 {
+    background-image: url(../images/sparkle-overlay.png);
 }
 
 #second {
@@ -101,6 +114,9 @@ article h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+#second .sprite#owl {
+    background-image: url('../images/owl.png');
 }
 
 #fourth {
@@ -118,15 +134,13 @@ article h2 {
 /* Introduction */
 
 /* Background Only */
-#second {
-    padding: 50px 0;
-}
 
 #second article {
     background: url(../images/grain.png) repeat #333;
     color: #fff;
     width: 445px;
     margin-left: 100px;
+    margin-top: 100px;
     padding: 10px 20px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
     line-height: 1.5em;

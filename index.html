@@ -24,17 +24,19 @@
 			<source src="images/white-smoke.mp4" type="video/mp4">
 		</video>
 		<article class="white-font">
-			<h1 class="hp-font">
+			<h1 class="hp-font yellow-shadow-font">
 				Happy Birthday
 			</h1>
 			<p>Wait, what’s this letter? It looks like… could it be…?</p>
 	    </article>
-		<div id="sparkle" class="sprite" data-offsety="430" data-xposition="50%" data-speed="2" data-direction="up"></div>
-		<div id="letter" class="sprite" data-offsety="430" data-xposition="50%" data-speed="3" data-direction="down"></div>
+		<div id="sparkle" class="sprite" data-scale="200" data-offsety="430" data-offsety="50%" data-speed="2" data-direction="up"></div>
+		<div id="sparkle-2" class="sprite" data-scale="150" data-offsety="430" data-offsety="50%" data-speed="3" data-direction="up"></div>
+		<div id="letter" class="sprite" data-offsety="430" data-offsety="50%" data-speed="3" data-direction="down"></div>
 	</section>
-
+	
 	<!-- Section #2 / Background Only -->
 	<section id="second" class="story parallax-bg" data-direction="down">
+		<div id="owl" class="sprite" data-scale="400" data-offsety="200" data-offsetx="85%" data-speed="3" data-direction="down"></div>
 		<article>
 			<h2 class="a-font">It's your Hogwarts letter!</h2>
 			<p>In this section we are sliding the background at a different speed to the rest of the page.</p>
@@ -47,8 +49,8 @@
 	
 	<!-- Section #3 / Photos -->
 	<section id="third" class="story parallax-bg1" data-direction="up">    	
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="29%" data-speed="3"></div>
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-offsety="25%" data-speed="2"></div>
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-offsety="29%" data-speed="3"></div>
     	<article>
     		<h2>Scrolling Sprites</h2>
 	    	<div class="textbox">    	
@@ -79,7 +81,7 @@
 
 	<!-- Section #5 / The End-->
 	<section id="theend" class="story parallax-bg" data-speed="8" data-offsetY="250">    	
-		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
+		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-offsety="50%" data-speed="-2"></div>	
 	</section>
 	
   </div> <!-- // End of #main -->
