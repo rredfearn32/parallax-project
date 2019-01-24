@@ -24,6 +24,10 @@ function positionShit() {
             if(sprite.dataset.offsetx) {
                 sprite.style.backgroundPositionX = sprite.dataset.offsetx;
             }
+
+            if(sprite.dataset.rotate) {
+                sprite.style.transform = 'rotate(' + bgSection.getBoundingClientRect().top + 'deg)';
+            }
         });
     });
 }

@@ -36,6 +36,9 @@ article h2 {
     margin: 25px 0;
     line-height: 1em;
 }
+article p {
+    margin-bottom: 25px;
+}
 
 .story {
     height: 100vh;
@@ -64,6 +67,19 @@ article h2 {
     left: 0;
     position: absolute;
     margin: 0 auto;
+    transform-origin: center center;
+}
+
+.emoji-line {
+    font-size: 30px;
+}
+
+a.hp-theme {
+    color: #dca012;
+    font-weight: bold;
+    font-family: hpfont;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 /* First section styles */
@@ -105,31 +121,6 @@ article h2 {
 #second .sprite#owl {
     background-image: url('../images/owl.png');
 }
-
-/* Third section styles */
-#third {
-    background-image: url(../images/camden.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#fourth {
-    background: url(../images/magic-table.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-#theend {
-    background: url(../images/puckered.png) 50% bottom no-repeat fixed;
-}
-
-/* Introduction */
-
-/* Background Only */
-
 #second article {
     background: url(../images/grain.png) repeat #333;
     color: #fff;
@@ -143,15 +134,13 @@ article h2 {
     border: 1px solid rgba(150, 150, 150, 0.1);
 }
 
-#second article p {
-    margin-bottom: 25px;
+/* Third section styles */
+#third {
+    background-image: url(../images/camden.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-#second article a {
-    color: #ff0;
-}
-
-/* Photograph */
 #third article {
     background: url(../images/grain.png) repeat #333;
     color: #fff;
@@ -165,32 +154,43 @@ article h2 {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(150, 150, 150, 0.1);
 }
-
 #third article p {
     width: 300px;
     margin-bottom: 25px;
 }
+#third #food-1 {
+    background-image: url('../images/food-1.png');
+}
+#third #food-2 {
+    background-image: url('../images/food-2.png');
+}
+#third #food-3 {
+    background-image: url('../images/food-3.png');
+}
 
-/* HTML5 Video */
+/* Fourth section styles */
+#fourth {
+    background: url(../images/magic-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #fourth article {
-    margin-left: 10%;
+    background: url(../images/grain.png) repeat #333;
+    color: #fff;
+    width: 445px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 10px 20px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
     line-height: 1.5em;
-    color: #fff;
-    position: absolute;
-    top: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(150, 150, 150, 0.1);
 }
 
-#fourth article p {
-    width: 300px;
-    margin: 50px 0;
-}
 
-#fourth video {
-    position: fixed;
-    left: 50%;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
-    z-index: 1;
+#theend {
+    background: url(../images/puckered.png) 50% bottom no-repeat fixed;
 }
 
 /* The End */
