@@ -21,6 +21,12 @@
  .bold {
      font-weight: bold;
  }
+ .italic {
+     font-style: italic;
+ }
+ .strikethrough {
+     text-decoration: line-through;
+ }
 
  h1 {
      font-size: 10em;
@@ -38,6 +44,9 @@ article h2 {
 }
 article p {
     margin-bottom: 25px;
+}
+article {
+    text-align: center;
 }
 
 .story {
@@ -74,7 +83,7 @@ article p {
     font-size: 30px;
 }
 
-a.hp-theme {
+.hp-theme {
     color: #dca012;
     font-weight: bold;
     font-family: hpfont;
@@ -155,7 +164,7 @@ a.hp-theme {
     border: 1px solid rgba(150, 150, 150, 0.1);
 }
 #third article p {
-    width: 300px;
+    width: 350px;
     margin-bottom: 25px;
 }
 #third #food-1 {
@@ -187,20 +196,57 @@ a.hp-theme {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(150, 150, 150, 0.1);
 }
-
-
-#theend {
-    background: url(../images/puckered.png) 50% bottom no-repeat fixed;
+#fourth #potion-1 {
+    background-image: url('../images/potion-1.png');
+    background-size: 200px;
+}
+#fourth #potion-2 {
+    background-image: url('../images/potion-2.png');
+    background-size: 150px;
+}
+#fourth #potion-3 {
+    background-image: url('../images/potion-3.png');
+    background-size: 250px;
+}
+#fourth #potion-4 {
+    background-image: url('../images/potion-4.png');
+    background-size: 100px;
+}
+#fourth a {
+    position: relative;
+    z-index: 100;
 }
 
-/* The End */
-#theend .byebye {
-    background: url(../images/theend.png) 40% 100px no-repeat fixed;
-    height: 1000px;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width: 1920px;
-    position: relative;
-    margin: 0 auto;
+#fifth {
+    background: url(../images/bar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#fifth article {
+    background: url(../images/grain.png) repeat #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 100px auto 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    line-height: 1.5em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(150, 150, 150, 0.1);
+}
+#fifth .hp-theme {
+    font-size: 50px;
+}
+#fifth #fireworks {
+    background-image: url('../images/fireworks.png');
+    background-size: 800px;
+}
+#fifth #fireworks-flipped {
+    background-image: url('../images/fireworks-flipped.png');
+    background-size: 800px;
 }
