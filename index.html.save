@@ -51,13 +51,13 @@
 		<article>
 			<h2>The adventure starts...</h2>
 			<p class="emoji-line">🚂&middot;💼&middot;🍻</p>    	
-			<p>On April 11th 2019, you'll be travelling to London with Robbie and Anne for an exciting event!</p>
-			<p>First of all, we'll have a morning of fun activities planned for you! These will include:</p>
+			<p>On [DATE], you'll be travelling to London with Robbie and Anne for an exciting event!</p>
+			<p>This will begin with a morning  a morning of fun activities planned for you! These will include:</p>
 			<p>
 				<ul>
 					<li>Exploring Camden Market 🛍️</li>
-					<li>Visiting cool cafes</li>
-					<li>Finding some hidden spots</li>
+					<li>Example Two</li>
+					<li>Example Three</li>
 				</ul>
 			</p>
 			<p>But those are just the appetizers! The real event will begin in the afternoon...👇</p>
@@ -72,7 +72,7 @@
 		<article>
 			<h2>Let the sorting begin!</h2>
 			<p class="emoji-line">🕵&middot;⚗️&middot;🔮</p>
-			<p>Get ready for your birthday treat: at 17:30, we'll be taking part together in Enigma Game's...</p>
+			<p>Get ready for your birthday treat: together, we'll be taking part in Enigma Game's...</p>
 			<p><a href="https://enigmaquests.london/quests/school-of-witchcraft-and-wizardry-rms1003" class="hp-theme" target="_blank">The School of Witchcraft and Wizardry</a></p>
 			<p>...an award-winning escape room based on <span class="bold italic">"a certain young Wizard who will remain nameless for licensing reasons"!</span> 🤐😅</p>
 			<p>Will you be able to prove yourself as a True Hufflepuff, or will you revealed as an <span class="strikethrough">evil</span> Slytherin? Or worse, a <span class="italic">Gryfindor?!</span></p>

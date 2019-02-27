@@ -83,7 +83,8 @@ article {
     font-size: 30px;
 }
 
-.hp-theme {
+.hp-theme,
+a.hp-theme {
     color: #dca012;
     font-weight: bold;
     font-family: hpfont;
